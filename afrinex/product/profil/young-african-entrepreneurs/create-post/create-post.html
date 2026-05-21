@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="create-post.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>
+      Afrinex : Young African Entrepreneur - Try Afrinex Preview Platform
+    </title>
+  </head>
+  <body>
+    <div class="dashboard-trigger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="dashboard">
+      <div class="dashboard-inner">
+        <header class="dashboard-header">
+          <h1><a href="/product/profil/young-african-entrepreneurs/yae.html">Dashboard</a></h1><br>
+        </header>
+
+        <div class="dashboard-actions">
+          <a
+            class="action-card"
+            href="/product/profil/young-african-entrepreneurs/create-project/create-project.html"
+          >
+            <i class="fa-solid fa-rocket"></i>
+            <p>Create project</p>
+          </a>
+
+          <a class="action-card" href="/product/profil/young-african-entrepreneurs/send-candidature/send-candidature.html">
+            <i class="fa-solid fa-paper-plane"></i>
+            <p>Send candidature to VC</p>
+          </a>
+
+          <a class="action-card active" href="/product/profil/young-african-entrepreneurs/create-post/create-post.html">
+            <i class="fa-solid fa-pen"></i>
+            <p>Create post</p>
+          </a>
+        </div>
+
+        <div class="account">
+          <img src="/public/images/afrinexhero.jpeg" alt="Profile Image" />
+          <div class="account-name"></div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="create-project">
+        <div>
+          <h1>Create a post to give your experience as a founder and reach out with other.</h1>
+          
+        </div>
+        <br /><br />
+        <div>
+          <dialog id="myDialog">
+            <form id="postForm" class="contact-form" method="dialog">
+              <i class="fa-solid fa-close" id="closeBtn" title="Close"></i>
+              <h1>Create a post</h1>
+              <div class="form-row">
+                <label for="postText">Your post (max 280 chars)</label>
+                <textarea id="postText" name="content" maxlength="280" rows="5" required placeholder="Share an update..."></textarea>
+              </div>
+              <div class="form-row">
+                <small id="remaining">280</small>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="create">Post</button>
+              </div>
+            </form>
+          </dialog>
+
+          <button class="create" id="openBtn">create ur post</button>
+        </div>
+      </section>
+      <section class="projects">
+
+      </section>
+    </main>
+
+    <script src="create-post.js"></script>
+    <script src="yae.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="send.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>
+      Afrinex : Young African Entrepreneur - Try Afrinex Preview Platform
+    </title>
+  </head>
+  <body>
+    <div class="dashboard-trigger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="dashboard">
+      <div class="dashboard-inner">
+        <header class="dashboard-header">
+          <h1><a href="/product/profil/young-african-entrepreneurs/yae.html">Dashboard</a></h1><br>
+        </header>
+
+        <div class="dashboard-actions">
+          <a
+            class="action-card"
+            href="/product/profil/young-african-entrepreneurs/create-project/create-project.html"
+          >
+            <i class="fa-solid fa-rocket"></i>
+            <p>Create project</p>
+          </a>
+
+          <a class="action-card active" href="/product/profil/young-african-entrepreneurs/send-candidature/send-candidature.html">
+            <i class="fa-solid fa-paper-plane"></i>
+            <p>Send candidature to VC</p>
+          </a>
+
+          <a class="action-card" href="/product/profil/young-african-entrepreneurs/create-post/create-post.html">
+            <i class="fa-solid fa-pen"></i>
+            <p>Create post</p>
+          </a>
+        </div>
+
+        <div class="account">
+          <img src="/public/images/afrinexhero.jpeg" alt="Profile Image" />
+          <div class="account-name"></div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="create-project">
+        <div>
+          <h1>Send candidature to Afrinex (VC)</h1>
+          <br /><br />
+          <p>
+            Fill this form to submit your candidature to Afrinex waitlist. All
+            submissions are sent to the configured professional email.
+          </p>
+        </div>
+
+        <form id="candidatureForm" class="contact-form" method="POST" action="https://formsubmit.co/niteclaude@gmail.com">
+          <!-- Hidden inputs for FormSubmit behaviour -->
+          <input type="hidden" name="_subject" value="New VC candidature from Afrinex waitlist" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="/waitlist/waitlist.html" />
+          <input type="hidden" name="_template" value="table" />
+
+          <h1>Applicant information</h1>
+          <div class="form-row">
+            <label for="firstName">First name</label>
+            <input id="firstName" name="firstName" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="lastName">Last name</label>
+            <input id="lastName" name="lastName" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" />
+          </div>
+
+          <h1>Project information</h1>
+          <div class="form-row">
+            <label for="projectName">Project name</label>
+            <input id="projectName" name="projectName" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="region">Region</label>
+            <input id="region" name="region" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="problem">Problem</label>
+            <textarea id="problem" name="problem" rows="4" required></textarea>
+          </div>
+          <div class="form-row">
+            <label for="solution">Solution</label>
+            <textarea id="solution" name="solution" rows="4" required></textarea>
+          </div>
+          <div class="form-row">
+            <label for="traction">Traction (metrics, users, revenue)</label>
+            <textarea id="traction" name="traction" rows="3"></textarea>
+          </div>
+          <div class="form-row">
+            <label for="businessModel">Business model</label>
+            <textarea id="businessModel" name="businessModel" rows="3"></textarea>
+          </div>
+          <div class="form-row">
+            <label for="ask">What are you asking for? (amount / help)</label>
+            <input id="ask" name="ask" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="pitchLink">Pitch video link (YouTube)</label>
+            <input id="pitchLink" name="pitchLink" type="url" />
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="create">Submit candidature</button>
+          </div>
+          <p class="note">Submissions go to Afrinex waitlist. By doing that you ensure your place to have funding with Afrinex.</p>
+        </form>
+      </section>
+
+      <section class="projects"></section>
+    </main>
+
+    <script src="send.js"></script>
+    <script src="create-project.js"></script>
+    <script src="yae.js"></script>
+  </body>
+</html>
